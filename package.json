@@ -9,7 +9,7 @@
   "node-red": "3.x",
   "node-red-dashboard": "~3.6.5",
   "node-red-contrib-ui-led": "~0.4.11",
-  "node-red-contrib-google-sheet": "~0.0.4",
+  "node-red-contrib-googlesheet": "~0.2.0",
   "node-red-contrib-openweathermap": "~0.2.2"
   }
 }
