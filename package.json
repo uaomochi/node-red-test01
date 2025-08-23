@@ -1,0 +1,11 @@
+{
+  "name": "node-red-test01",
+  "version": "1.0.0",
+  "description": "Node-RED on Render from scratch",
+  "scripts": {
+    "start": "node ./node_modules/node-red/red.js --userDir ./"
+  },
+  "dependencies": {
+    "node-red": "3.x"
+  }
+}
