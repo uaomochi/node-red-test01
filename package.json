@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node ./node_modules/node-red/red.js --userDir ./ flows.json"
   },
-  ""dependencies": {
+  "dependencies": {
   "node-red": "3.x",
   "@flowfuse/node-red-dashboard": "~1.8.0"
 }
+
