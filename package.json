@@ -6,6 +6,10 @@
     "start": "node ./node_modules/node-red/red.js --userDir ./ flows.json"
   },
   "dependencies": {
-    "node-red": "3.x"
+  "node-red": "3.x",
+  "node-red-dashboard": "~3.6.5",
+  "node-red-contrib-ui-led": "~0.4.11",
+  "node-red-contrib-google-sheet": "~0.0.4",
+  "node-red-contrib-openweathermap": "~0.2.2"
   }
 }
