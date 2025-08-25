@@ -1,0 +1,4788 @@
+[
+    {
+        "id": "4e571ff3861b2cc8",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f4bda3dd8ed0837e",
+        "type": "mqtt-broker",
+        "name": "ServerHiveMQ",
+        "broker": "8c68e8a69d9348deb398a526fafbf712.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "cf9d83fa9dbb2d77",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "navigationStyle": "default"
+    },
+    {
+        "id": "fbb878fa20700bf7",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "95d9d6950a83a03d",
+        "type": "ui-page",
+        "name": "เลือกวันทำงาน",
+        "ui": "cf9d83fa9dbb2d77",
+        "path": "/page3",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "fbb878fa20700bf7",
+        "order": 2,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "b87277cba2d64f06",
+        "type": "ui-group",
+        "name": "วันทำงาน",
+        "page": "95d9d6950a83a03d",
+        "width": "6",
+        "height": "1",
+        "order": -1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "9027b81488ea5980",
+        "type": "ui-page",
+        "name": "MAIN",
+        "ui": "cf9d83fa9dbb2d77",
+        "path": "/page2",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "fbb878fa20700bf7",
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "e18f65c02dbbb162",
+        "type": "ui-group",
+        "name": "MAIN",
+        "page": "9027b81488ea5980",
+        "width": "6",
+        "height": "1",
+        "order": -1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "66c67be6058f8730",
+        "type": "ui-page",
+        "name": "ตั้งเวลา",
+        "ui": "cf9d83fa9dbb2d77",
+        "path": "/page4",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "fbb878fa20700bf7",
+        "order": 3,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "60af01e49409f3d1",
+        "type": "ui-group",
+        "name": "ตั้งเวลา",
+        "page": "66c67be6058f8730",
+        "width": "6",
+        "height": "1",
+        "order": -1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "4a7252ead5317e26",
+        "type": "ui-page",
+        "name": "SENSOR",
+        "ui": "cf9d83fa9dbb2d77",
+        "path": "/page5",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "fbb878fa20700bf7",
+        "order": 4,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "08f0e1cda47905e1",
+        "type": "ui-group",
+        "name": "SENSOR",
+        "page": "4a7252ead5317e26",
+        "width": "6",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "939b411f06811be7",
+        "type": "ui-page",
+        "name": "แจ้งเตือน",
+        "ui": "cf9d83fa9dbb2d77",
+        "path": "/page6",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "fbb878fa20700bf7",
+        "order": 5,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "fad682593aa6b8a4",
+        "type": "ui-group",
+        "name": "แจ้งเตือน",
+        "page": "4a7252ead5317e26",
+        "width": "6",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": false,
+        "disabled": true
+    },
+    {
+        "id": "04c215867842fbba",
+        "type": "ui-group",
+        "name": "แจ้งเตือน",
+        "page": "939b411f06811be7",
+        "width": "6",
+        "height": "1",
+        "order": -1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "c5aaf536ff506307",
+        "type": "mqtt in",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "TEMP1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f4bda3dd8ed0837e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 50,
+        "y": 40,
+        "wires": [
+            [
+                "82962e1accc942bc"
+            ]
+        ]
+    },
+    {
+        "id": "82962e1accc942bc",
+        "type": "ui-gauge",
+        "z": "4e571ff3861b2cc8",
+        "name": "อุณหภูมิในดิน",
+        "group": "e18f65c02dbbb162",
+        "order": 1,
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "อุณหภูมิในดิน",
+        "units": "",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800"
+            },
+            {
+                "from": "70",
+                "color": "#ea5353"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 190,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "c69368deaad76187",
+        "type": "mqtt in",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "HUMI2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f4bda3dd8ed0837e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 50,
+        "y": 120,
+        "wires": [
+            [
+                "1e98b83127ae0f25"
+            ]
+        ]
+    },
+    {
+        "id": "1e98b83127ae0f25",
+        "type": "ui-gauge",
+        "z": "4e571ff3861b2cc8",
+        "name": "ความชื้นในดิน",
+        "group": "e18f65c02dbbb162",
+        "order": 2,
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "ความชื้นในดิน",
+        "units": "",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800"
+            },
+            {
+                "from": "70",
+                "color": "#ea5353"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 190,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "a3715dd6748395af",
+        "type": "mqtt in",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "PH3",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f4bda3dd8ed0837e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 370,
+        "y": 40,
+        "wires": [
+            [
+                "6c70dd1d55471bc6"
+            ]
+        ]
+    },
+    {
+        "id": "cee7cf45b0353e89",
+        "type": "mqtt in",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "TEMP4",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f4bda3dd8ed0837e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 370,
+        "y": 120,
+        "wires": [
+            [
+                "67914cfd2d2ada7c"
+            ]
+        ]
+    },
+    {
+        "id": "6c70dd1d55471bc6",
+        "type": "ui-gauge",
+        "z": "4e571ff3861b2cc8",
+        "name": "ค่าpHในดิน",
+        "group": "e18f65c02dbbb162",
+        "order": 3,
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "ค่าpHในดิน",
+        "units": "",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800"
+            },
+            {
+                "from": "7",
+                "color": "#ea5353"
+            }
+        ],
+        "min": 0,
+        "max": "10",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 530,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "67914cfd2d2ada7c",
+        "type": "ui-gauge",
+        "z": "4e571ff3861b2cc8",
+        "name": "อุณหภูมิในอากาศ",
+        "group": "e18f65c02dbbb162",
+        "order": 4,
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "อุณหภูมิในอากาศ",
+        "units": "",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800"
+            },
+            {
+                "from": "70",
+                "color": "#ea5353"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 540,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "ad117792a362fc13",
+        "type": "mqtt in",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "HUMI5",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f4bda3dd8ed0837e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 690,
+        "y": 40,
+        "wires": [
+            [
+                "e676b4aa21675f8d"
+            ]
+        ]
+    },
+    {
+        "id": "e676b4aa21675f8d",
+        "type": "ui-gauge",
+        "z": "4e571ff3861b2cc8",
+        "name": "ความชื้นในอากาศ",
+        "group": "e18f65c02dbbb162",
+        "order": 5,
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "ความชื้นในอากาศ",
+        "units": "",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800"
+            },
+            {
+                "from": "70",
+                "color": "#ea5353"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 860,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "9d19e68cc43c8450",
+        "type": "ui-switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "LOAD1",
+        "label": "LOAD1",
+        "group": "e18f65c02dbbb162",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 60,
+        "y": 180,
+        "wires": [
+            [
+                "b5d850ec34df9328"
+            ]
+        ]
+    },
+    {
+        "id": "b5d850ec34df9328",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "MOTOR1",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 220,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "8a2be1cc790a4ddc",
+        "type": "mqtt in",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "LAMP_MOTOR1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f4bda3dd8ed0837e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 80,
+        "y": 240,
+        "wires": [
+            [
+                "efa9677da93c774d"
+            ]
+        ]
+    },
+    {
+        "id": "efa9677da93c774d",
+        "type": "switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 250,
+        "y": 240,
+        "wires": [
+            [
+                "05b50856c53af82a"
+            ],
+            [
+                "822ee68b5655e0f7"
+            ]
+        ]
+    },
+    {
+        "id": "05b50856c53af82a",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 220,
+        "wires": [
+            [
+                "0a4a5c8602752c0c"
+            ]
+        ]
+    },
+    {
+        "id": "822ee68b5655e0f7",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 260,
+        "wires": [
+            [
+                "0a4a5c8602752c0c"
+            ]
+        ]
+    },
+    {
+        "id": "0a4a5c8602752c0c",
+        "type": "ui-template",
+        "z": "4e571ff3861b2cc8",
+        "group": "e18f65c02dbbb162",
+        "page": "",
+        "ui": "",
+        "name": "Lamp_load1",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<style>\n    .led {\n        width: 35px;\n        height: 35px;\n        border-radius: 50%;\n        margin: 10px auto;\n        background-color: {{msg.color}};\n        border: 2px solid #333;\n    }\n</style>\n\n<div class=\"led\"></div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 570,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b8219b70a1de0fc8",
+        "type": "ui-switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "LOAD2",
+        "label": "LOAD2",
+        "group": "e18f65c02dbbb162",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 60,
+        "y": 320,
+        "wires": [
+            [
+                "e3641accedcdfdb0"
+            ]
+        ]
+    },
+    {
+        "id": "e3641accedcdfdb0",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "MOTOR2",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 220,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "5bbe862856a5effb",
+        "type": "mqtt in",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "LAMP_MOTOR2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f4bda3dd8ed0837e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 80,
+        "y": 380,
+        "wires": [
+            [
+                "a0eec6bfcc4016e1"
+            ]
+        ]
+    },
+    {
+        "id": "a0eec6bfcc4016e1",
+        "type": "switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 250,
+        "y": 380,
+        "wires": [
+            [
+                "75e3ae7924188b15"
+            ],
+            [
+                "f69761f195523221"
+            ]
+        ]
+    },
+    {
+        "id": "75e3ae7924188b15",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 360,
+        "wires": [
+            [
+                "2c7e7f3cf674ef35"
+            ]
+        ]
+    },
+    {
+        "id": "f69761f195523221",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 400,
+        "wires": [
+            [
+                "2c7e7f3cf674ef35"
+            ]
+        ]
+    },
+    {
+        "id": "2c7e7f3cf674ef35",
+        "type": "ui-template",
+        "z": "4e571ff3861b2cc8",
+        "group": "e18f65c02dbbb162",
+        "page": "",
+        "ui": "",
+        "name": "lamp_load2",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<style>\n    .led {\n        width: 35px;\n        height: 35px;\n        border-radius: 50%;\n        margin: 10px auto;\n        background-color: {{msg.color}};\n        border: 2px solid #333;\n    }\n</style>\n\n<div class=\"led\"></div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 570,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "553bc16b6aa16bb4",
+        "type": "ui-switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "LOAD3",
+        "label": "LOAD3",
+        "group": "e18f65c02dbbb162",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 60,
+        "y": 460,
+        "wires": [
+            [
+                "558e54cd39ebe4d8"
+            ]
+        ]
+    },
+    {
+        "id": "558e54cd39ebe4d8",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "MOTOR3",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 220,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "31f99fbf95d7ac56",
+        "type": "mqtt in",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "LAMP_MOTOR3",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f4bda3dd8ed0837e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 80,
+        "y": 520,
+        "wires": [
+            [
+                "9c855a6250b66c4c"
+            ]
+        ]
+    },
+    {
+        "id": "9c855a6250b66c4c",
+        "type": "switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 250,
+        "y": 520,
+        "wires": [
+            [
+                "83205e298a6d283b"
+            ],
+            [
+                "aed11450a8672dc7"
+            ]
+        ]
+    },
+    {
+        "id": "83205e298a6d283b",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 500,
+        "wires": [
+            [
+                "41997eae2b435118"
+            ]
+        ]
+    },
+    {
+        "id": "aed11450a8672dc7",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 540,
+        "wires": [
+            [
+                "41997eae2b435118"
+            ]
+        ]
+    },
+    {
+        "id": "41997eae2b435118",
+        "type": "ui-template",
+        "z": "4e571ff3861b2cc8",
+        "group": "e18f65c02dbbb162",
+        "page": "",
+        "ui": "",
+        "name": "lamp_load3",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<style>\n    .led {\n        width: 35px;\n        height: 35px;\n        border-radius: 50%;\n        margin: 10px auto;\n        background-color: {{msg.color}};\n        border: 2px solid #333;\n    }\n</style>\n\n<div class=\"led\"></div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 570,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "848eca9c2eea02ea",
+        "type": "ui-switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "SUNDAY",
+        "label": "SUNDAY",
+        "group": "b87277cba2d64f06",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 60,
+        "y": 600,
+        "wires": [
+            [
+                "f7db0f468f55ef08"
+            ]
+        ]
+    },
+    {
+        "id": "f7db0f468f55ef08",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "SUNDAY",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 220,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "b5bc2b28f074f2c9",
+        "type": "mqtt in",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "LAMP_SUNDAY",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f4bda3dd8ed0837e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 80,
+        "y": 660,
+        "wires": [
+            [
+                "79ee88493c8dd4a1"
+            ]
+        ]
+    },
+    {
+        "id": "79ee88493c8dd4a1",
+        "type": "switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 250,
+        "y": 660,
+        "wires": [
+            [
+                "05215e197efd7d47"
+            ],
+            [
+                "fce62ae2cd922ac7"
+            ]
+        ]
+    },
+    {
+        "id": "05215e197efd7d47",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 640,
+        "wires": [
+            [
+                "e5b901d402b9e63e"
+            ]
+        ]
+    },
+    {
+        "id": "fce62ae2cd922ac7",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 680,
+        "wires": [
+            [
+                "e5b901d402b9e63e"
+            ]
+        ]
+    },
+    {
+        "id": "e5b901d402b9e63e",
+        "type": "ui-template",
+        "z": "4e571ff3861b2cc8",
+        "group": "b87277cba2d64f06",
+        "page": "",
+        "ui": "",
+        "name": "lamp_sunday",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<style>\n    .led {\n        width: 35px;\n        height: 35px;\n        border-radius: 50%;\n        margin: 10px auto;\n        background-color: {{msg.color}};\n        border: 2px solid #333;\n    }\n</style>\n\n<div class=\"led\"></div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 570,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "80e28e311c8cc2cc",
+        "type": "ui-switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "MONDAY",
+        "label": "MONDAY",
+        "group": "b87277cba2d64f06",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 60,
+        "y": 720,
+        "wires": [
+            [
+                "d74a9c27e08cb112"
+            ]
+        ]
+    },
+    {
+        "id": "d74a9c27e08cb112",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "MONDAY",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 220,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "baf0e0c1dc8bcdda",
+        "type": "mqtt in",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "LAMP_MONDAY",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f4bda3dd8ed0837e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 80,
+        "y": 780,
+        "wires": [
+            [
+                "f7083b40ec929b9e"
+            ]
+        ]
+    },
+    {
+        "id": "f7083b40ec929b9e",
+        "type": "switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 250,
+        "y": 780,
+        "wires": [
+            [
+                "e4c61da790c39be6"
+            ],
+            [
+                "78ecde69c06b32f2"
+            ]
+        ]
+    },
+    {
+        "id": "e4c61da790c39be6",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 760,
+        "wires": [
+            [
+                "83bbcfbc95c057bb"
+            ]
+        ]
+    },
+    {
+        "id": "78ecde69c06b32f2",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 800,
+        "wires": [
+            [
+                "83bbcfbc95c057bb"
+            ]
+        ]
+    },
+    {
+        "id": "83bbcfbc95c057bb",
+        "type": "ui-template",
+        "z": "4e571ff3861b2cc8",
+        "group": "b87277cba2d64f06",
+        "page": "",
+        "ui": "",
+        "name": "lamp_monday",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<style>\n    .led {\n        width: 35px;\n        height: 35px;\n        border-radius: 50%;\n        margin: 10px auto;\n        background-color: {{msg.color}};\n        border: 2px solid #333;\n    }\n</style>\n\n<div class=\"led\"></div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 580,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f3da86dcc164c334",
+        "type": "ui-switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "TUESDAY",
+        "label": "TUESDAY",
+        "group": "b87277cba2d64f06",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 70,
+        "y": 840,
+        "wires": [
+            [
+                "c7e2bf9f159b893c"
+            ]
+        ]
+    },
+    {
+        "id": "c7e2bf9f159b893c",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "TUESDAY",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 230,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "7920a9f5620a6f18",
+        "type": "mqtt in",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "LAMP_TUESDAY",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f4bda3dd8ed0837e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 90,
+        "y": 900,
+        "wires": [
+            [
+                "f85a18c00ff8b3ad"
+            ]
+        ]
+    },
+    {
+        "id": "f85a18c00ff8b3ad",
+        "type": "switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 250,
+        "y": 900,
+        "wires": [
+            [
+                "64c89509a94a77d5"
+            ],
+            [
+                "e54aeb2660b27e05"
+            ]
+        ]
+    },
+    {
+        "id": "64c89509a94a77d5",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 880,
+        "wires": [
+            [
+                "974d6395ddec428b"
+            ]
+        ]
+    },
+    {
+        "id": "e54aeb2660b27e05",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 920,
+        "wires": [
+            [
+                "974d6395ddec428b"
+            ]
+        ]
+    },
+    {
+        "id": "974d6395ddec428b",
+        "type": "ui-template",
+        "z": "4e571ff3861b2cc8",
+        "group": "b87277cba2d64f06",
+        "page": "",
+        "ui": "",
+        "name": "lamp_TUESDAY",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<style>\n    .led {\n        width: 35px;\n        height: 35px;\n        border-radius: 50%;\n        margin: 10px auto;\n        background-color: {{msg.color}};\n        border: 2px solid #333;\n    }\n</style>\n\n<div class=\"led\"></div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 580,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7888c95810b893cd",
+        "type": "ui-switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "WEDNESDAY",
+        "label": "WEDNESDAY",
+        "group": "b87277cba2d64f06",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 80,
+        "y": 960,
+        "wires": [
+            [
+                "f737ac8e2124ddee"
+            ]
+        ]
+    },
+    {
+        "id": "f737ac8e2124ddee",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "WEDNESDAY",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 260,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "be0ae30dda35acb7",
+        "type": "mqtt in",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "LAMP_WEDNESDAY",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f4bda3dd8ed0837e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 1020,
+        "wires": [
+            [
+                "1f4993d5446265b6"
+            ]
+        ]
+    },
+    {
+        "id": "1f4993d5446265b6",
+        "type": "switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 250,
+        "y": 1020,
+        "wires": [
+            [
+                "738417551396bca4"
+            ],
+            [
+                "54efd2e9f09b3ab4"
+            ]
+        ]
+    },
+    {
+        "id": "738417551396bca4",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 1000,
+        "wires": [
+            [
+                "11176efcf39d57c9"
+            ]
+        ]
+    },
+    {
+        "id": "54efd2e9f09b3ab4",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 1040,
+        "wires": [
+            [
+                "11176efcf39d57c9"
+            ]
+        ]
+    },
+    {
+        "id": "11176efcf39d57c9",
+        "type": "ui-template",
+        "z": "4e571ff3861b2cc8",
+        "group": "b87277cba2d64f06",
+        "page": "",
+        "ui": "",
+        "name": "lamp_WEDNESDAY",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<style>\n    .led {\n        width: 35px;\n        height: 35px;\n        border-radius: 50%;\n        margin: 10px auto;\n        background-color: {{msg.color}};\n        border: 2px solid #333;\n    }\n</style>\n\n<div class=\"led\"></div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 600,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b52580e102a9484d",
+        "type": "ui-switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "THURSDAY",
+        "label": "THURSDAY",
+        "group": "b87277cba2d64f06",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 70,
+        "y": 1080,
+        "wires": [
+            [
+                "c34476e4d8a2cd08"
+            ]
+        ]
+    },
+    {
+        "id": "c34476e4d8a2cd08",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "THURSDAY",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 250,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "eed6e3038fa1745c",
+        "type": "mqtt in",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "LAMP_THURSDAY",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f4bda3dd8ed0837e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 90,
+        "y": 1140,
+        "wires": [
+            [
+                "c920cee3cb620575"
+            ]
+        ]
+    },
+    {
+        "id": "c920cee3cb620575",
+        "type": "switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 250,
+        "y": 1140,
+        "wires": [
+            [
+                "3fb74694eca28751"
+            ],
+            [
+                "bbb71c2718917bf7"
+            ]
+        ]
+    },
+    {
+        "id": "3fb74694eca28751",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 1120,
+        "wires": [
+            [
+                "71f9cfb8dda31f6e"
+            ]
+        ]
+    },
+    {
+        "id": "bbb71c2718917bf7",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 1160,
+        "wires": [
+            [
+                "71f9cfb8dda31f6e"
+            ]
+        ]
+    },
+    {
+        "id": "71f9cfb8dda31f6e",
+        "type": "ui-template",
+        "z": "4e571ff3861b2cc8",
+        "group": "b87277cba2d64f06",
+        "page": "",
+        "ui": "",
+        "name": "lamp_THURSDAY",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<style>\n    .led {\n        width: 35px;\n        height: 35px;\n        border-radius: 50%;\n        margin: 10px auto;\n        background-color: {{msg.color}};\n        border: 2px solid #333;\n    }\n</style>\n\n<div class=\"led\"></div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 590,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4b79afddac183778",
+        "type": "ui-switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "FRIDAY",
+        "label": "FRIDAY",
+        "group": "b87277cba2d64f06",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 60,
+        "y": 1200,
+        "wires": [
+            [
+                "8b0cd8c09dd7d756"
+            ]
+        ]
+    },
+    {
+        "id": "8b0cd8c09dd7d756",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "FRIDAY",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 240,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "8b1e23c82f9c09bf",
+        "type": "mqtt in",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "LAMP_FRIDAY",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f4bda3dd8ed0837e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 80,
+        "y": 1260,
+        "wires": [
+            [
+                "d79154537e4d4211"
+            ]
+        ]
+    },
+    {
+        "id": "d79154537e4d4211",
+        "type": "switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 250,
+        "y": 1260,
+        "wires": [
+            [
+                "0797c96f166aa06d"
+            ],
+            [
+                "ffce4ba821f88312"
+            ]
+        ]
+    },
+    {
+        "id": "0797c96f166aa06d",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 1240,
+        "wires": [
+            [
+                "31230e6f6f636072"
+            ]
+        ]
+    },
+    {
+        "id": "ffce4ba821f88312",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 1280,
+        "wires": [
+            [
+                "31230e6f6f636072"
+            ]
+        ]
+    },
+    {
+        "id": "31230e6f6f636072",
+        "type": "ui-template",
+        "z": "4e571ff3861b2cc8",
+        "group": "b87277cba2d64f06",
+        "page": "",
+        "ui": "",
+        "name": "lamp_FRIDAY",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<style>\n    .led {\n        width: 35px;\n        height: 35px;\n        border-radius: 50%;\n        margin: 10px auto;\n        background-color: {{msg.color}};\n        border: 2px solid #333;\n    }\n</style>\n\n<div class=\"led\"></div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 580,
+        "y": 1260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a3ef8c1c094f490c",
+        "type": "ui-switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "SATURDAY",
+        "label": "SATURDAY",
+        "group": "b87277cba2d64f06",
+        "order": 14,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 70,
+        "y": 1320,
+        "wires": [
+            [
+                "5b689779c0da202a"
+            ]
+        ]
+    },
+    {
+        "id": "5b689779c0da202a",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "SATURDAY",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 250,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "ae0b38a0e44eba5c",
+        "type": "mqtt in",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "LAMP_SATURDAY",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f4bda3dd8ed0837e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 90,
+        "y": 1380,
+        "wires": [
+            [
+                "af13ad9054e92573"
+            ]
+        ]
+    },
+    {
+        "id": "af13ad9054e92573",
+        "type": "switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 250,
+        "y": 1380,
+        "wires": [
+            [
+                "ac70c63746c18fa5"
+            ],
+            [
+                "33955853aa1a637a"
+            ]
+        ]
+    },
+    {
+        "id": "ac70c63746c18fa5",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 1360,
+        "wires": [
+            [
+                "9341d74c0a3f3393"
+            ]
+        ]
+    },
+    {
+        "id": "33955853aa1a637a",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 1400,
+        "wires": [
+            [
+                "9341d74c0a3f3393"
+            ]
+        ]
+    },
+    {
+        "id": "9341d74c0a3f3393",
+        "type": "ui-template",
+        "z": "4e571ff3861b2cc8",
+        "group": "b87277cba2d64f06",
+        "page": "",
+        "ui": "",
+        "name": "lamp_SATURDAY",
+        "order": 13,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<style>\n    .led {\n        width: 35px;\n        height: 35px;\n        border-radius: 50%;\n        margin: 10px auto;\n        background-color: {{msg.color}};\n        border: 2px solid #333;\n    }\n</style>\n\n<div class=\"led\"></div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 590,
+        "y": 1380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3d7fca07003a4bfd",
+        "type": "ui-text-input",
+        "z": "4e571ff3861b2cc8",
+        "group": "60af01e49409f3d1",
+        "name": "ชั่วโมง 1",
+        "label": "ชั่วโมง 1",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 60,
+        "y": 1460,
+        "wires": [
+            [
+                "74628c0249053983"
+            ]
+        ]
+    },
+    {
+        "id": "74628c0249053983",
+        "type": "function",
+        "z": "4e571ff3861b2cc8",
+        "name": "function 1",
+        "func": "let value = Number(msg.payload);\nlet min = 0;\nlet max = 23;\n\nif (value >= min && value <= max) {\n    // ค่าถูกต้อง: ส่งข้อมูลออกไปที่ช่องทางที่ 1\n    // และส่ง null ไปช่องทางที่ 2 (ไม่มีการแจ้งเตือน)\n    return [msg, null];\n} else {\n    // ค่าผิดพลาด: ไม่ส่งข้อมูลไปช่องทางที่ 1\n    // และสร้างข้อความแจ้งเตือนส่งไปช่องทางที่ 2\n    msg.payload = \"ค่าชั่วโมงต้องอยู่ระหว่าง 0-23 เท่านั้น!\";\n    return [null, msg];\n}",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 1460,
+        "wires": [
+            [
+                "fd8dc80736bb2e23"
+            ],
+            [
+                "7451c644b3b94015"
+            ]
+        ]
+    },
+    {
+        "id": "fd8dc80736bb2e23",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "SET_RUNTIME1_HOUR",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 510,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "dac8b7d254da8d4a",
+        "type": "ui-text-input",
+        "z": "4e571ff3861b2cc8",
+        "group": "60af01e49409f3d1",
+        "name": "นาที 1",
+        "label": "นาที 1",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 50,
+        "y": 1600,
+        "wires": [
+            [
+                "b11e514f57b1de40"
+            ]
+        ]
+    },
+    {
+        "id": "b11e514f57b1de40",
+        "type": "function",
+        "z": "4e571ff3861b2cc8",
+        "name": "function 2",
+        "func": "let value = Number(msg.payload);\nlet min = 0;\nlet max = 59;\n\nif (value >= min && value <= max) {\n    // ค่าถูกต้อง: ส่งข้อมูลออกไปที่ช่องทางที่ 1\n    // และส่ง null ไปช่องทางที่ 2 (ไม่มีการแจ้งเตือน)\n    return [msg, null];\n} else {\n    // ค่าผิดพลาด: ไม่ส่งข้อมูลไปช่องทางที่ 1\n    // และสร้างข้อความแจ้งเตือนส่งไปช่องทางที่ 2\n    msg.payload = \"ค่านาทีต้องอยู่ระหว่าง 0-59 เท่านั้น!\";\n    return [null, msg];\n}",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 1600,
+        "wires": [
+            [
+                "cd80140f2213f151"
+            ],
+            [
+                "d5fa3e5b0492edd9"
+            ]
+        ]
+    },
+    {
+        "id": "cd80140f2213f151",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "SET_RUNTIME1_MINS",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 510,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "7451c644b3b94015",
+        "type": "ui-notification",
+        "z": "4e571ff3861b2cc8",
+        "ui": "cf9d83fa9dbb2d77",
+        "position": "center center",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "3",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "raw": false,
+        "className": "",
+        "name": "ตั้งเวลา",
+        "x": 450,
+        "y": 1560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d5fa3e5b0492edd9",
+        "type": "ui-notification",
+        "z": "4e571ff3861b2cc8",
+        "ui": "cf9d83fa9dbb2d77",
+        "position": "center center",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "3",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "raw": false,
+        "className": "",
+        "name": "",
+        "x": 480,
+        "y": 1660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b034e37ec8261b22",
+        "type": "ui-text-input",
+        "z": "4e571ff3861b2cc8",
+        "group": "60af01e49409f3d1",
+        "name": "ระยะเวลาทำงาน 1(นาที)",
+        "label": "ระยะเวลาทำงาน 1(นาที)",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 100,
+        "y": 1700,
+        "wires": [
+            [
+                "5c4d067a4b7d64a7"
+            ]
+        ]
+    },
+    {
+        "id": "5c4d067a4b7d64a7",
+        "type": "function",
+        "z": "4e571ff3861b2cc8",
+        "name": "function 3",
+        "func": "let value = Number(msg.payload);\nlet min = 0;\nlet max = 60;\n\nif (value >= min && value <= max) {\n    // ค่าถูกต้อง: ส่งข้อมูลออกไปที่ช่องทางที่ 1\n    // และส่ง null ไปช่องทางที่ 2 (ไม่มีการแจ้งเตือน)\n    return [msg, null];\n} else {\n    // ค่าผิดพลาด: ไม่ส่งข้อมูลไปช่องทางที่ 1\n    // และสร้างข้อความแจ้งเตือนส่งไปช่องทางที่ 2\n    msg.payload = \"ระยะเวลาทำงานต้องอยู่ระหว่าง 0-60 เท่านั้น!\";\n    return [null, msg];\n}",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 1700,
+        "wires": [
+            [
+                "9e39cd98cee52717"
+            ],
+            [
+                "bc85d90f074112a1"
+            ]
+        ]
+    },
+    {
+        "id": "9e39cd98cee52717",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "SET_PERIOD_TIME_1",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 490,
+        "y": 1700,
+        "wires": []
+    },
+    {
+        "id": "bc85d90f074112a1",
+        "type": "ui-notification",
+        "z": "4e571ff3861b2cc8",
+        "ui": "cf9d83fa9dbb2d77",
+        "position": "center center",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "3",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "raw": false,
+        "className": "",
+        "name": "",
+        "x": 460,
+        "y": 1760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c367ac25800c1292",
+        "type": "ui-text-input",
+        "z": "4e571ff3861b2cc8",
+        "group": "60af01e49409f3d1",
+        "name": "ชั่วโมง 2",
+        "label": "ชั่วโมง 2",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 60,
+        "y": 1820,
+        "wires": [
+            [
+                "4b5ff71de3d15b56"
+            ]
+        ]
+    },
+    {
+        "id": "4b5ff71de3d15b56",
+        "type": "function",
+        "z": "4e571ff3861b2cc8",
+        "name": "function 4",
+        "func": "let value = Number(msg.payload);\nlet min = 0;\nlet max = 23;\n\nif (value >= min && value <= max) {\n    // ค่าถูกต้อง: ส่งข้อมูลออกไปที่ช่องทางที่ 1\n    // และส่ง null ไปช่องทางที่ 2 (ไม่มีการแจ้งเตือน)\n    return [msg, null];\n} else {\n    // ค่าผิดพลาด: ไม่ส่งข้อมูลไปช่องทางที่ 1\n    // และสร้างข้อความแจ้งเตือนส่งไปช่องทางที่ 2\n    msg.payload = \"ค่าชั่วโมงต้องอยู่ระหว่าง 0-23 เท่านั้น!\";\n    return [null, msg];\n}",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 1820,
+        "wires": [
+            [
+                "ca9a6c6d9dc401a0"
+            ],
+            [
+                "7975593917f3cd59"
+            ]
+        ]
+    },
+    {
+        "id": "ca9a6c6d9dc401a0",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "SET_RUNTIME2_HOUR",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 510,
+        "y": 1820,
+        "wires": []
+    },
+    {
+        "id": "f1d5fd715801e39d",
+        "type": "ui-text-input",
+        "z": "4e571ff3861b2cc8",
+        "group": "60af01e49409f3d1",
+        "name": "นาที 2",
+        "label": "นาที 2",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 50,
+        "y": 1960,
+        "wires": [
+            [
+                "4ee9c34093b33c2e"
+            ]
+        ]
+    },
+    {
+        "id": "4ee9c34093b33c2e",
+        "type": "function",
+        "z": "4e571ff3861b2cc8",
+        "name": "function 5",
+        "func": "let value = Number(msg.payload);\nlet min = 0;\nlet max = 59;\n\nif (value >= min && value <= max) {\n    // ค่าถูกต้อง: ส่งข้อมูลออกไปที่ช่องทางที่ 1\n    // และส่ง null ไปช่องทางที่ 2 (ไม่มีการแจ้งเตือน)\n    return [msg, null];\n} else {\n    // ค่าผิดพลาด: ไม่ส่งข้อมูลไปช่องทางที่ 1\n    // และสร้างข้อความแจ้งเตือนส่งไปช่องทางที่ 2\n    msg.payload = \"ค่านาทีต้องอยู่ระหว่าง 0-59 เท่านั้น!\";\n    return [null, msg];\n}",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 1960,
+        "wires": [
+            [
+                "2d699f853ba0d802"
+            ],
+            [
+                "c5ee4d2928b7634d"
+            ]
+        ]
+    },
+    {
+        "id": "2d699f853ba0d802",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "SET_RUNTIME2_MINS",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 510,
+        "y": 1960,
+        "wires": []
+    },
+    {
+        "id": "7975593917f3cd59",
+        "type": "ui-notification",
+        "z": "4e571ff3861b2cc8",
+        "ui": "cf9d83fa9dbb2d77",
+        "position": "center center",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "3",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "raw": false,
+        "className": "",
+        "name": "",
+        "x": 480,
+        "y": 1920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c5ee4d2928b7634d",
+        "type": "ui-notification",
+        "z": "4e571ff3861b2cc8",
+        "ui": "cf9d83fa9dbb2d77",
+        "position": "center center",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "3",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "raw": false,
+        "className": "",
+        "name": "",
+        "x": 480,
+        "y": 2020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e54aeef6170c1c93",
+        "type": "ui-text-input",
+        "z": "4e571ff3861b2cc8",
+        "group": "60af01e49409f3d1",
+        "name": "ระยะเวลาทำงาน 2(นาที)",
+        "label": "ระยะเวลาทำงาน 2(นาที)",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 100,
+        "y": 2060,
+        "wires": [
+            [
+                "1c261ab44797fc5c"
+            ]
+        ]
+    },
+    {
+        "id": "1c261ab44797fc5c",
+        "type": "function",
+        "z": "4e571ff3861b2cc8",
+        "name": "function 6",
+        "func": "let value = Number(msg.payload);\nlet min = 0;\nlet max = 60;\n\nif (value >= min && value <= max) {\n    // ค่าถูกต้อง: ส่งข้อมูลออกไปที่ช่องทางที่ 1\n    // และส่ง null ไปช่องทางที่ 2 (ไม่มีการแจ้งเตือน)\n    return [msg, null];\n} else {\n    // ค่าผิดพลาด: ไม่ส่งข้อมูลไปช่องทางที่ 1\n    // และสร้างข้อความแจ้งเตือนส่งไปช่องทางที่ 2\n    msg.payload = \"ระยะเวลาทำงานต้องอยู่ระหว่าง 0-60 เท่านั้น!\";\n    return [null, msg];\n}",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 2060,
+        "wires": [
+            [
+                "1b96eff0f56c4b9b"
+            ],
+            [
+                "3507113e8fd60091"
+            ]
+        ]
+    },
+    {
+        "id": "1b96eff0f56c4b9b",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "SET_PERIOD_TIME_2",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 490,
+        "y": 2060,
+        "wires": []
+    },
+    {
+        "id": "3507113e8fd60091",
+        "type": "ui-notification",
+        "z": "4e571ff3861b2cc8",
+        "ui": "cf9d83fa9dbb2d77",
+        "position": "center center",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "3",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "raw": false,
+        "className": "",
+        "name": "",
+        "x": 460,
+        "y": 2120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "455cfa6ba24af0e8",
+        "type": "ui-text-input",
+        "z": "4e571ff3861b2cc8",
+        "group": "60af01e49409f3d1",
+        "name": "ชั่วโมง 3",
+        "label": "ชั่วโมง 3",
+        "order": 16,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 60,
+        "y": 2160,
+        "wires": [
+            [
+                "c80f73cf0d7e3bdd"
+            ]
+        ]
+    },
+    {
+        "id": "c80f73cf0d7e3bdd",
+        "type": "function",
+        "z": "4e571ff3861b2cc8",
+        "name": "function 7",
+        "func": "let value = Number(msg.payload);\nlet min = 0;\nlet max = 23;\n\nif (value >= min && value <= max) {\n    // ค่าถูกต้อง: ส่งข้อมูลออกไปที่ช่องทางที่ 1\n    // และส่ง null ไปช่องทางที่ 2 (ไม่มีการแจ้งเตือน)\n    return [msg, null];\n} else {\n    // ค่าผิดพลาด: ไม่ส่งข้อมูลไปช่องทางที่ 1\n    // และสร้างข้อความแจ้งเตือนส่งไปช่องทางที่ 2\n    msg.payload = \"ค่าชั่วโมงต้องอยู่ระหว่าง 0-23 เท่านั้น!\";\n    return [null, msg];\n}",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 2160,
+        "wires": [
+            [
+                "761a91e0b867dad1"
+            ],
+            [
+                "228c2ad4a26ae93d"
+            ]
+        ]
+    },
+    {
+        "id": "761a91e0b867dad1",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "SET_RUNTIME3_HOUR",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 510,
+        "y": 2160,
+        "wires": []
+    },
+    {
+        "id": "e0c21c14d5177b5a",
+        "type": "ui-text",
+        "z": "4e571ff3861b2cc8",
+        "group": "60af01e49409f3d1",
+        "order": 13,
+        "width": 0,
+        "height": 0,
+        "name": "ตั้งเวลาครั้งที่ 3",
+        "label": "ตั้งเวลาครั้งที่ 3",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 480,
+        "y": 2220,
+        "wires": []
+    },
+    {
+        "id": "b0c7eee88aa978b5",
+        "type": "ui-text-input",
+        "z": "4e571ff3861b2cc8",
+        "group": "60af01e49409f3d1",
+        "name": "นาที 3",
+        "label": "นาที 3",
+        "order": 17,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 50,
+        "y": 2300,
+        "wires": [
+            [
+                "ef94a4a1d17963eb"
+            ]
+        ]
+    },
+    {
+        "id": "ef94a4a1d17963eb",
+        "type": "function",
+        "z": "4e571ff3861b2cc8",
+        "name": "function 8",
+        "func": "let value = Number(msg.payload);\nlet min = 0;\nlet max = 59;\n\nif (value >= min && value <= max) {\n    // ค่าถูกต้อง: ส่งข้อมูลออกไปที่ช่องทางที่ 1\n    // และส่ง null ไปช่องทางที่ 2 (ไม่มีการแจ้งเตือน)\n    return [msg, null];\n} else {\n    // ค่าผิดพลาด: ไม่ส่งข้อมูลไปช่องทางที่ 1\n    // และสร้างข้อความแจ้งเตือนส่งไปช่องทางที่ 2\n    msg.payload = \"ค่านาทีต้องอยู่ระหว่าง 0-59 เท่านั้น!\";\n    return [null, msg];\n}",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 2300,
+        "wires": [
+            [
+                "0fc54c99b0da1b71"
+            ],
+            [
+                "b5630b582345bec4"
+            ]
+        ]
+    },
+    {
+        "id": "0fc54c99b0da1b71",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "SET_RUNTIME3_MINS",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 510,
+        "y": 2300,
+        "wires": []
+    },
+    {
+        "id": "228c2ad4a26ae93d",
+        "type": "ui-notification",
+        "z": "4e571ff3861b2cc8",
+        "ui": "cf9d83fa9dbb2d77",
+        "position": "center center",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "3",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "raw": false,
+        "className": "",
+        "name": "",
+        "x": 480,
+        "y": 2260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b5630b582345bec4",
+        "type": "ui-notification",
+        "z": "4e571ff3861b2cc8",
+        "ui": "cf9d83fa9dbb2d77",
+        "position": "center center",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "3",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "raw": false,
+        "className": "",
+        "name": "",
+        "x": 480,
+        "y": 2360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "78f779cec466eecb",
+        "type": "ui-text-input",
+        "z": "4e571ff3861b2cc8",
+        "group": "60af01e49409f3d1",
+        "name": "ระยะเวลาทำงาน 3(นาที)",
+        "label": "ระยะเวลาทำงาน 3(นาที)",
+        "order": 18,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 100,
+        "y": 2400,
+        "wires": [
+            [
+                "730320f2c5735aea"
+            ]
+        ]
+    },
+    {
+        "id": "730320f2c5735aea",
+        "type": "function",
+        "z": "4e571ff3861b2cc8",
+        "name": "function 9",
+        "func": "let value = Number(msg.payload);\nlet min = 0;\nlet max = 60;\n\nif (value >= min && value <= max) {\n    // ค่าถูกต้อง: ส่งข้อมูลออกไปที่ช่องทางที่ 1\n    // และส่ง null ไปช่องทางที่ 2 (ไม่มีการแจ้งเตือน)\n    return [msg, null];\n} else {\n    // ค่าผิดพลาด: ไม่ส่งข้อมูลไปช่องทางที่ 1\n    // และสร้างข้อความแจ้งเตือนส่งไปช่องทางที่ 2\n    msg.payload = \"ระยะเวลาทำงานต้องอยู่ระหว่าง 0-60 เท่านั้น!\";\n    return [null, msg];\n}",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 2400,
+        "wires": [
+            [
+                "ab5f135fa488eca6"
+            ],
+            [
+                "0363abd49b053523"
+            ]
+        ]
+    },
+    {
+        "id": "ab5f135fa488eca6",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "SET_PERIOD_TIME_3",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 490,
+        "y": 2400,
+        "wires": []
+    },
+    {
+        "id": "0363abd49b053523",
+        "type": "ui-notification",
+        "z": "4e571ff3861b2cc8",
+        "ui": "cf9d83fa9dbb2d77",
+        "position": "center center",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "3",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "raw": false,
+        "className": "",
+        "name": "",
+        "x": 460,
+        "y": 2460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "73db385a6f168202",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "RUNTIME1_ON_OFF",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 960,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "54d03cafeaaf71aa",
+        "type": "ui-switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "ทำงานครั้งที่ 1",
+        "label": "ทำงานครั้งที่ 1",
+        "group": "60af01e49409f3d1",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 730,
+        "y": 1500,
+        "wires": [
+            [
+                "73db385a6f168202"
+            ]
+        ]
+    },
+    {
+        "id": "6607ec451da4e5e1",
+        "type": "mqtt in",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "LAMP_RUNTIME1_ON_OFF",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f4bda3dd8ed0837e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 740,
+        "y": 1540,
+        "wires": [
+            [
+                "ed6949aeb1bdf79f"
+            ]
+        ]
+    },
+    {
+        "id": "ed6949aeb1bdf79f",
+        "type": "switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 850,
+        "y": 1600,
+        "wires": [
+            [
+                "38f5dbbeea012699"
+            ],
+            [
+                "bfd95d80e6e67ed7"
+            ]
+        ]
+    },
+    {
+        "id": "38f5dbbeea012699",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 990,
+        "y": 1580,
+        "wires": [
+            [
+                "71f72af054b730d1"
+            ]
+        ]
+    },
+    {
+        "id": "bfd95d80e6e67ed7",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 990,
+        "y": 1620,
+        "wires": [
+            [
+                "71f72af054b730d1"
+            ]
+        ]
+    },
+    {
+        "id": "71f72af054b730d1",
+        "type": "ui-template",
+        "z": "4e571ff3861b2cc8",
+        "group": "60af01e49409f3d1",
+        "page": "",
+        "ui": "",
+        "name": "RUNTIME1_ON_OFF",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<style>\n    .led {\n        width: 35px;\n        height: 35px;\n        border-radius: 50%;\n        margin: 10px auto;\n        background-color: {{msg.color}};\n        border: 2px solid #333;\n    }\n</style>\n\n<div class=\"led\"></div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1200,
+        "y": 1600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "59073a95996f43c5",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "RUNTIME2_ON_OFF",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 980,
+        "y": 1840,
+        "wires": []
+    },
+    {
+        "id": "a77abafacc296dfd",
+        "type": "ui-switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "ทำงานครั้งที่ 2",
+        "label": "ทำงานครั้งที่ 2",
+        "group": "60af01e49409f3d1",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 750,
+        "y": 1840,
+        "wires": [
+            [
+                "59073a95996f43c5"
+            ]
+        ]
+    },
+    {
+        "id": "1c829353cdca27c5",
+        "type": "mqtt in",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "LAMP_RUNTIME2_ON_OFF",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f4bda3dd8ed0837e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 760,
+        "y": 1880,
+        "wires": [
+            [
+                "b6216dfde133b11c"
+            ]
+        ]
+    },
+    {
+        "id": "b6216dfde133b11c",
+        "type": "switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 870,
+        "y": 1940,
+        "wires": [
+            [
+                "119ca40b12b5ca92"
+            ],
+            [
+                "4dc7b6378805c1cf"
+            ]
+        ]
+    },
+    {
+        "id": "119ca40b12b5ca92",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1010,
+        "y": 1920,
+        "wires": [
+            [
+                "df25bca2dd16b2a8"
+            ]
+        ]
+    },
+    {
+        "id": "4dc7b6378805c1cf",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1010,
+        "y": 1960,
+        "wires": [
+            [
+                "df25bca2dd16b2a8"
+            ]
+        ]
+    },
+    {
+        "id": "df25bca2dd16b2a8",
+        "type": "ui-template",
+        "z": "4e571ff3861b2cc8",
+        "group": "60af01e49409f3d1",
+        "page": "",
+        "ui": "",
+        "name": "RUNTIME2_ON_OFF",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<style>\n    .led {\n        width: 35px;\n        height: 35px;\n        border-radius: 50%;\n        margin: 10px auto;\n        background-color: {{msg.color}};\n        border: 2px solid #333;\n    }\n</style>\n\n<div class=\"led\"></div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1220,
+        "y": 1940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "98e03156f302f438",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "RUNTIME3_ON_OFF",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 1020,
+        "y": 2180,
+        "wires": []
+    },
+    {
+        "id": "d72641b74d83d081",
+        "type": "ui-switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "ทำงานครั้งที่ 3",
+        "label": "ทำงานครั้งที่ 3",
+        "group": "60af01e49409f3d1",
+        "order": 15,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 790,
+        "y": 2180,
+        "wires": [
+            [
+                "98e03156f302f438"
+            ]
+        ]
+    },
+    {
+        "id": "ab458428ce406722",
+        "type": "mqtt in",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "LAMP_RUNTIME3_ON_OFF",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f4bda3dd8ed0837e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 800,
+        "y": 2220,
+        "wires": [
+            [
+                "2c7be394bffdfa8e"
+            ]
+        ]
+    },
+    {
+        "id": "2c7be394bffdfa8e",
+        "type": "switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 910,
+        "y": 2280,
+        "wires": [
+            [
+                "4d163ae6f7a311ef"
+            ],
+            [
+                "da6e9f04cfdd9f8c"
+            ]
+        ]
+    },
+    {
+        "id": "4d163ae6f7a311ef",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1050,
+        "y": 2260,
+        "wires": [
+            [
+                "40b884b5aaaaf36c"
+            ]
+        ]
+    },
+    {
+        "id": "da6e9f04cfdd9f8c",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1050,
+        "y": 2300,
+        "wires": [
+            [
+                "40b884b5aaaaf36c"
+            ]
+        ]
+    },
+    {
+        "id": "40b884b5aaaaf36c",
+        "type": "ui-template",
+        "z": "4e571ff3861b2cc8",
+        "group": "60af01e49409f3d1",
+        "page": "",
+        "ui": "",
+        "name": "RUNTIME3_ON_OFF",
+        "order": 14,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<style>\n    .led {\n        width: 35px;\n        height: 35px;\n        border-radius: 50%;\n        margin: 10px auto;\n        background-color: {{msg.color}};\n        border: 2px solid #333;\n    }\n</style>\n\n<div class=\"led\"></div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1260,
+        "y": 2280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9363485cd497d712",
+        "type": "ui-text-input",
+        "z": "4e571ff3861b2cc8",
+        "group": "08f0e1cda47905e1",
+        "name": "อุณหภูมิในดิน",
+        "label": "อุณหภูมิในดิน",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 70,
+        "y": 2520,
+        "wires": [
+            [
+                "5ed5325ad0a510f0"
+            ]
+        ]
+    },
+    {
+        "id": "5ed5325ad0a510f0",
+        "type": "function",
+        "z": "4e571ff3861b2cc8",
+        "name": "function 10",
+        "func": "let value = Number(msg.payload);\nlet min = 0;\nlet max = 100;\n\nif (value >= min && value <= max) {\n    // ค่าถูกต้อง: ส่งข้อมูลออกไปที่ช่องทางที่ 1\n    // และส่ง null ไปช่องทางที่ 2 (ไม่มีการแจ้งเตือน)\n    return [msg, null];\n} else {\n    // ค่าผิดพลาด: ไม่ส่งข้อมูลไปช่องทางที่ 1\n    // และสร้างข้อความแจ้งเตือนส่งไปช่องทางที่ 2\n    msg.payload = \"ค่าอุณหภูมิในดินต้องอยู่ระหว่าง 0-100 เท่านั้น!\";\n    return [null, msg];\n}",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 2520,
+        "wires": [
+            [
+                "cdd5de25070a660f"
+            ],
+            [
+                "4cf3a6f8272b8ef4"
+            ]
+        ]
+    },
+    {
+        "id": "cdd5de25070a660f",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "CONTROL_TEMP1",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 490,
+        "y": 2520,
+        "wires": []
+    },
+    {
+        "id": "4cf3a6f8272b8ef4",
+        "type": "ui-notification",
+        "z": "4e571ff3861b2cc8",
+        "ui": "cf9d83fa9dbb2d77",
+        "position": "center center",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "3",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "raw": false,
+        "className": "",
+        "name": "",
+        "x": 480,
+        "y": 2560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "534eb2f386339a5a",
+        "type": "ui-text-input",
+        "z": "4e571ff3861b2cc8",
+        "group": "08f0e1cda47905e1",
+        "name": "ความชื้นในดิน",
+        "label": "ความชื้นในดิน",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 70,
+        "y": 2600,
+        "wires": [
+            [
+                "6dd1c305813c91ad"
+            ]
+        ]
+    },
+    {
+        "id": "6dd1c305813c91ad",
+        "type": "function",
+        "z": "4e571ff3861b2cc8",
+        "name": "function 11",
+        "func": "let value = Number(msg.payload);\nlet min = 0;\nlet max = 100;\n\nif (value >= min && value <= max) {\n    // ค่าถูกต้อง: ส่งข้อมูลออกไปที่ช่องทางที่ 1\n    // และส่ง null ไปช่องทางที่ 2 (ไม่มีการแจ้งเตือน)\n    return [msg, null];\n} else {\n    // ค่าผิดพลาด: ไม่ส่งข้อมูลไปช่องทางที่ 1\n    // และสร้างข้อความแจ้งเตือนส่งไปช่องทางที่ 2\n    msg.payload = \"ค่าความชื้นในดินต้องอยู่ระหว่าง 0-100 เท่านั้น!\";\n    return [null, msg];\n}",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 2600,
+        "wires": [
+            [
+                "8959af6a19d9b0f2"
+            ],
+            [
+                "7a857ab5529e586b"
+            ]
+        ]
+    },
+    {
+        "id": "8959af6a19d9b0f2",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "CONTROL_HUMI1",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 490,
+        "y": 2600,
+        "wires": []
+    },
+    {
+        "id": "7a857ab5529e586b",
+        "type": "ui-notification",
+        "z": "4e571ff3861b2cc8",
+        "ui": "cf9d83fa9dbb2d77",
+        "position": "center center",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "3",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "raw": false,
+        "className": "",
+        "name": "",
+        "x": 480,
+        "y": 2640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9f1b70c4513614f7",
+        "type": "ui-text-input",
+        "z": "4e571ff3861b2cc8",
+        "group": "08f0e1cda47905e1",
+        "name": "ความชื้นในอากาศ",
+        "label": "ความชื้นในอากาศ",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 80,
+        "y": 2680,
+        "wires": [
+            [
+                "2cc25532ca8a9785"
+            ]
+        ]
+    },
+    {
+        "id": "2cc25532ca8a9785",
+        "type": "function",
+        "z": "4e571ff3861b2cc8",
+        "name": "function 12",
+        "func": "let value = Number(msg.payload);\nlet min = 0;\nlet max = 100;\n\nif (value >= min && value <= max) {\n    // ค่าถูกต้อง: ส่งข้อมูลออกไปที่ช่องทางที่ 1\n    // และส่ง null ไปช่องทางที่ 2 (ไม่มีการแจ้งเตือน)\n    return [msg, null];\n} else {\n    // ค่าผิดพลาด: ไม่ส่งข้อมูลไปช่องทางที่ 1\n    // และสร้างข้อความแจ้งเตือนส่งไปช่องทางที่ 2\n    msg.payload = \"ค่าความชื้นในอากาศต้องอยู่ระหว่าง 0-100 เท่านั้น!\";\n    return [null, msg];\n}",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 2680,
+        "wires": [
+            [
+                "f308abfee75979fa"
+            ],
+            [
+                "2be5e88135a63cc2"
+            ]
+        ]
+    },
+    {
+        "id": "f308abfee75979fa",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "CONTROL_HUMI2",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 490,
+        "y": 2680,
+        "wires": []
+    },
+    {
+        "id": "2be5e88135a63cc2",
+        "type": "ui-notification",
+        "z": "4e571ff3861b2cc8",
+        "ui": "cf9d83fa9dbb2d77",
+        "position": "center center",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "3",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "raw": false,
+        "className": "",
+        "name": "",
+        "x": 480,
+        "y": 2720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "22c9d854528160dd",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "MORE_TEMP1",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 280,
+        "y": 2760,
+        "wires": []
+    },
+    {
+        "id": "3336dacfea856610",
+        "type": "ui-switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "มากกว่าTEMP1",
+        "label": "มากกว่า",
+        "group": "08f0e1cda47905e1",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 80,
+        "y": 2760,
+        "wires": [
+            [
+                "22c9d854528160dd"
+            ]
+        ]
+    },
+    {
+        "id": "7a6bc44694f2286d",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "LESS_TEMP1",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 280,
+        "y": 2840,
+        "wires": []
+    },
+    {
+        "id": "18b7bd89625d1142",
+        "type": "ui-switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "น้อยกว่าTEMP1",
+        "label": "น้อยกว่า",
+        "group": "08f0e1cda47905e1",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 80,
+        "y": 2840,
+        "wires": [
+            [
+                "7a6bc44694f2286d"
+            ]
+        ]
+    },
+    {
+        "id": "d4cb61d084b9d766",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "MORE_HUMI1",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 280,
+        "y": 2900,
+        "wires": []
+    },
+    {
+        "id": "b94c084f81e8710b",
+        "type": "ui-switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "มากกว่าHUMI1",
+        "label": "มากกว่า",
+        "group": "08f0e1cda47905e1",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 80,
+        "y": 2900,
+        "wires": [
+            [
+                "d4cb61d084b9d766"
+            ]
+        ]
+    },
+    {
+        "id": "515ab4ec488e8ae7",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "LESS_HUMI1",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 280,
+        "y": 2980,
+        "wires": []
+    },
+    {
+        "id": "17d56e7270c2b093",
+        "type": "ui-switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "น้อยกว่าHUMI1",
+        "label": "น้อยกว่า",
+        "group": "08f0e1cda47905e1",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 80,
+        "y": 2980,
+        "wires": [
+            [
+                "515ab4ec488e8ae7"
+            ]
+        ]
+    },
+    {
+        "id": "550a69ee31ab8d97",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "MORE_HUMI2",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 280,
+        "y": 3040,
+        "wires": []
+    },
+    {
+        "id": "c66723b414e37a4b",
+        "type": "ui-switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "มากกว่าHUMI2",
+        "label": "มากกว่า",
+        "group": "08f0e1cda47905e1",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 80,
+        "y": 3040,
+        "wires": [
+            [
+                "550a69ee31ab8d97"
+            ]
+        ]
+    },
+    {
+        "id": "b4990a9d574ded35",
+        "type": "mqtt out",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "LESS_HUMI2",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f4bda3dd8ed0837e",
+        "x": 280,
+        "y": 3120,
+        "wires": []
+    },
+    {
+        "id": "f12777090aac6a70",
+        "type": "ui-switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "น้อยกว่าHUMI2",
+        "label": "น้อยกว่า",
+        "group": "08f0e1cda47905e1",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 80,
+        "y": 3120,
+        "wires": [
+            [
+                "b4990a9d574ded35"
+            ]
+        ]
+    },
+    {
+        "id": "311075ed5ba1ab75",
+        "type": "mqtt in",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "Alarm_nammailai",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f4bda3dd8ed0837e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 3220,
+        "wires": [
+            [
+                "83c0bddbfc3099ae",
+                "926c81da3937d85c"
+            ]
+        ]
+    },
+    {
+        "id": "83c0bddbfc3099ae",
+        "type": "switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 350,
+        "y": 3220,
+        "wires": [
+            [
+                "d1691bf05c142915"
+            ],
+            [
+                "abc3c1beee22a62c"
+            ]
+        ]
+    },
+    {
+        "id": "d1691bf05c142915",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 3200,
+        "wires": [
+            [
+                "19d26f345e686056"
+            ]
+        ]
+    },
+    {
+        "id": "abc3c1beee22a62c",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 3240,
+        "wires": [
+            [
+                "19d26f345e686056"
+            ]
+        ]
+    },
+    {
+        "id": "19d26f345e686056",
+        "type": "ui-template",
+        "z": "4e571ff3861b2cc8",
+        "group": "04c215867842fbba",
+        "page": "",
+        "ui": "",
+        "name": "lamp_nammailai",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<style>\n    .led {\n        width: 35px;\n        height: 35px;\n        border-radius: 50%;\n        margin: 10px auto;\n        background-color: {{msg.color}};\n        border: 2px solid #333;\n    }\n</style>\n\n<div class=\"led\"></div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 680,
+        "y": 3220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "926c81da3937d85c",
+        "type": "ui-text",
+        "z": "4e571ff3861b2cc8",
+        "group": "04c215867842fbba",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "น้ำไม่ไหล",
+        "label": "น้ำไม่ไหล",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 360,
+        "y": 3280,
+        "wires": []
+    },
+    {
+        "id": "8385b5df5fdee528",
+        "type": "mqtt in",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "Alarm_nammod",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f4bda3dd8ed0837e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 3340,
+        "wires": [
+            [
+                "8a149d5db4a9b0d1",
+                "1e8d88574364dc94"
+            ]
+        ]
+    },
+    {
+        "id": "8a149d5db4a9b0d1",
+        "type": "switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 370,
+        "y": 3340,
+        "wires": [
+            [
+                "06ec098a73c994dc"
+            ],
+            [
+                "0a23277c394b4e58"
+            ]
+        ]
+    },
+    {
+        "id": "06ec098a73c994dc",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 3320,
+        "wires": [
+            [
+                "55f98ac9be587d0d"
+            ]
+        ]
+    },
+    {
+        "id": "0a23277c394b4e58",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 3360,
+        "wires": [
+            [
+                "55f98ac9be587d0d"
+            ]
+        ]
+    },
+    {
+        "id": "55f98ac9be587d0d",
+        "type": "ui-template",
+        "z": "4e571ff3861b2cc8",
+        "group": "04c215867842fbba",
+        "page": "",
+        "ui": "",
+        "name": "lamp_nammod",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<style>\n    .led {\n        width: 35px;\n        height: 35px;\n        border-radius: 50%;\n        margin: 10px auto;\n        background-color: {{msg.color}};\n        border: 2px solid #333;\n    }\n</style>\n\n<div class=\"led\"></div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 700,
+        "y": 3340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1e8d88574364dc94",
+        "type": "ui-text",
+        "z": "4e571ff3861b2cc8",
+        "group": "04c215867842fbba",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "น้ำหมด",
+        "label": "น้ำหมด",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 370,
+        "y": 3400,
+        "wires": []
+    },
+    {
+        "id": "b8b819ca6b77b269",
+        "type": "mqtt in",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "topic": "Alarm_overload",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f4bda3dd8ed0837e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 3460,
+        "wires": [
+            [
+                "d1af8ec18c691a02",
+                "4b23d43d2419abaf"
+            ]
+        ]
+    },
+    {
+        "id": "d1af8ec18c691a02",
+        "type": "switch",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 370,
+        "y": 3460,
+        "wires": [
+            [
+                "9087a635d92d1566"
+            ],
+            [
+                "564a54e23a1e08c1"
+            ]
+        ]
+    },
+    {
+        "id": "9087a635d92d1566",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 3440,
+        "wires": [
+            [
+                "cd0e6fa4e3f819c6"
+            ]
+        ]
+    },
+    {
+        "id": "564a54e23a1e08c1",
+        "type": "change",
+        "z": "4e571ff3861b2cc8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 3480,
+        "wires": [
+            [
+                "cd0e6fa4e3f819c6"
+            ]
+        ]
+    },
+    {
+        "id": "cd0e6fa4e3f819c6",
+        "type": "ui-template",
+        "z": "4e571ff3861b2cc8",
+        "group": "04c215867842fbba",
+        "page": "",
+        "ui": "",
+        "name": "lamp_overload",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<style>\n    .led {\n        width: 35px;\n        height: 35px;\n        border-radius: 50%;\n        margin: 10px auto;\n        background-color: {{msg.color}};\n        border: 2px solid #333;\n    }\n</style>\n\n<div class=\"led\"></div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 700,
+        "y": 3460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4b23d43d2419abaf",
+        "type": "ui-text",
+        "z": "4e571ff3861b2cc8",
+        "group": "04c215867842fbba",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "OVERLOAD",
+        "label": "OVERLOAD",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 390,
+        "y": 3520,
+        "wires": []
+    },
+    {
+        "id": "1940bd4d1f0fe09d",
+        "type": "ui-text",
+        "z": "4e571ff3861b2cc8",
+        "group": "60af01e49409f3d1",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "ตั้งเวลาครั้งที่ 1",
+        "label": "ตั้งเวลาครั้งที่ 1",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": true,
+        "font": "",
+        "fontSize": "16",
+        "color": "#717171",
+        "className": "",
+        "x": 480,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "1246ecd3d56ff9b2",
+        "type": "ui-text",
+        "z": "4e571ff3861b2cc8",
+        "group": "60af01e49409f3d1",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "ตั้งเวลาครั้งที่ 2",
+        "label": "ตั้งเวลาครั้งที่ 2",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": true,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 480,
+        "y": 1880,
+        "wires": []
+    }
+]
