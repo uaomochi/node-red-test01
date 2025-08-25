@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Node-RED on Render from scratch",
   "scripts": {
-    "start": "node ./node_modules/node-red/red.js --userDir ./ "
+    "start": "node ./node_modules/node-red/red.js --userDir ./flows.json"
   },
   "dependencies": {
     "node-red": "3.x",
