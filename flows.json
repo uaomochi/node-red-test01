@@ -93,55 +93,103 @@
         "wires": [[]]
     },
     {
-        "id": "e5e98e5697960634",
-        "type": "mqtt in",
+        "id": "dda17f5724cd111d",
+        "type": "mqtt out",
         "z": "e4af2e94d7e201bc",
-        "name": "LAMP_MOTOR1",
-        "topic": "LAMP_MOTOR1",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "1f77260aa5e6da41",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 560,
+        "name": "MOTOR1",
+        "topic": "MOTOR1",
+        "qos": "",
+        "retain": "",
+        "broker": "956d8c5f63cd0cfb",
+        "x": 380,
         "y": 280,
-        "wires": [["aa8beb423c318887"]]
+        "wires": []
     },
     {
-        "id": "c5441c505fa61451",
-        "type": "mqtt in",
+        "id": "e36774f889b30ab3",
+        "type": "mqtt out",
         "z": "e4af2e94d7e201bc",
-        "name": "LAMP_MOTOR2",
-        "topic": "LAMP_MOTOR2",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "ac67fc81d042df79",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 560,
+        "name": "MOTOR2",
+        "topic": "MOTOR2",
+        "qos": "",
+        "retain": "",
+        "broker": "d2b7b279f1f541f7",
+        "x": 380,
         "y": 360,
-        "wires": [["f10a8840a41b7520"]]
+        "wires": []
     },
     {
-        "id": "1e9a40993011d602",
-        "type": "mqtt in",
+        "id": "95d7b84cb3dd86f6",
+        "type": "mqtt out",
         "z": "e4af2e94d7e201bc",
-        "name": "LAMP_MOTOR3",
-        "topic": "LAMP_MOTOR3",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "e10f8e8c0d3bba8c",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 560,
+        "name": "MOTOR3",
+        "topic": "MOTOR3",
+        "qos": "",
+        "retain": "",
+        "broker": "17897c5035894061",
+        "x": 380,
         "y": 440,
-        "wires": [["a345caf10d806d9e"]]
+        "wires": []
+    },
+    {
+        "id": "a40ec12d70c75774",
+        "type": "change",
+        "z": "e4af2e94d7e201bc",
+        "name": "change",
+        "rules": [
+            {"t": "change", "p": "payload", "pt": "msg", "from": "true", "fromt": "bool", "to": "1", "tot": "num"},
+            {"t": "change", "p": "payload", "pt": "msg", "from": "false", "fromt": "bool", "to": "0", "tot": "num"}
+        ],
+        "action": "", "property": "", "from": "", "to": "", "reg": false,
+        "x": 240, "y": 280,
+        "wires": [["dda17f5724cd111d"]]
+    },
+    {
+        "id": "1235db7dd7311154",
+        "type": "change",
+        "z": "e4af2e94d7e201bc",
+        "name": "change",
+        "rules": [
+            {"t": "change", "p": "payload", "pt": "msg", "from": "true", "fromt": "bool", "to": "1", "tot": "num"},
+            {"t": "change", "p": "payload", "pt": "msg", "from": "false", "fromt": "bool", "to": "0", "tot": "num"}
+        ],
+        "action": "", "property": "", "from": "", "to": "", "reg": false,
+        "x": 240, "y": 360,
+        "wires": [["e36774f889b30ab3"]]
+    },
+    {
+        "id": "ca629faa61fd5be9",
+        "type": "change",
+        "z": "e4af2e94d7e201bc",
+        "name": "change",
+        "rules": [
+            {"t": "change", "p": "payload", "pt": "msg", "from": "true", "fromt": "bool", "to": "1", "tot": "num"},
+            {"t": "change", "p": "payload", "pt": "msg", "from": "false", "fromt": "bool", "to": "0", "tot": "num"}
+        ],
+        "action": "", "property": "", "from": "", "to": "", "reg": false,
+        "x": 240, "y": 440,
+        "wires": [["95d7b84cb3dd86f6"]]
+    },
+    {
+        "id": "d4e9cdec4c7c324d",
+        "type": "function",
+        "z": "e4af2e94d7e201bc",
+        "name": "function 1",
+        "func": "let value = Number(msg.payload);\nlet min = 0;\nlet max = 23;\n\nif (value >= min && value <= max) {\n    return [msg, null];\n} else {\n    msg.payload = \"ค่าชั่วโมงต้องอยู่ระหว่าง 0-23 เท่านั้น!\";\n    return [null, msg];\n}",
+        "outputs": 2, "timeout": 0, "noerr": 0,
+        "x": 260, "y": 940,
+        "wires": [["e830f5e60b434e02"],[]]
+    },
+    {
+        "id": "e830f5e60b434e02",
+        "type": "mqtt out",
+        "z": "e4af2e94d7e201bc",
+        "name": "SET_RUNTIME1_HOUR",
+        "topic": "SET_RUNTIME1_HOUR",
+        "qos": "", "retain": "",
+        "broker": "1245ab5b3150a922",
+        "x": 530, "y": 940,
+        "wires": []
     },
     {
         "id": "f63d0689d5b2b182",
@@ -149,12 +197,6 @@
         "name": "HiveMQ Broker",
         "broker": "8c68e8a69d9348deb398a526fafbf712.s1.eu.hivemq.cloud",
         "port": "8883",
-        "tls": "",
-        "clientid": "",
-        "autoConnect": true,
-        "usetls": true,
-        "protocolVersion": "4",
-        "keepalive": "60",
-        "cleansession": true
+        "tls": "", "clientid": "", "autoConnect": true, "usetls": true, "protocolVersion": "4", "keepalive": "60", "cleansession": true
     }
 ]
