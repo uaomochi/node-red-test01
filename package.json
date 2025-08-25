@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "node-red": "3.x",
-    "@flowfuse/node-red-dashboard": "~1.8.0"
+    "@flowfuse/node-red-dashboard": "~1.8.0",
+    "node-red-contrib-ui-led": "~0.4.11"
   }
 }
